@@ -8,14 +8,15 @@
 
 import UIKit
 
-class SymptomsListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
-
+class SymptomsListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MainPageDelegate{
+    
     @IBOutlet weak var tableView: UITableView!
     
     let searchController = UISearchController(searchResultsController: nil)
     let mediccontroller = APIMedicController()
     var symptoms : [String]?
     var filteredSymptoms = [String]()
+    var delegate:MainPageDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,12 +74,14 @@ class SymptomsListViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        tableView.deselectRow(at: indexPath, animated: true)
+        delegate?.getSelectedSymptom(symptom: DataModel.sharedInstance.symptoms[indexPath.row])
+        dismiss(animated: true, completion: nil)
     }
     
-  
-    
-    
+    func getSelectedSymptom(symptom: String) ->String{
+        return symptom
+    }
 }
 
 extension SymptomsListViewController: UISearchResultsUpdating {

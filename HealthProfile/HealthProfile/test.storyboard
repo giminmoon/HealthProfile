@@ -115,7 +115,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="MIb-Q2-eTg" kind="show" id="AAZ-Ob-cAS"/>
+                                    <action selector="addSymptoms:" destination="p7T-7z-tBL" eventType="touchUpInside" id="12G-sW-vK9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -169,11 +169,6 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDO-x2-8we">
-                                                    <rect key="frame" x="314" y="14" width="46" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Button"/>
-                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailingMargin" secondItem="208-PA-gS2" secondAttribute="trailing" constant="24" id="If7-x6-Nzg"/>
@@ -184,7 +179,6 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="nameField" destination="208-PA-gS2" id="L2v-WS-Uck"/>
-                                            <outlet property="radioButton" destination="gDO-x2-8we" id="1Fe-63-lW2"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

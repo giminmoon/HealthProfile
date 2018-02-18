@@ -14,8 +14,6 @@
 		05C5957D2038146000E06532 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05C5957B2038146000E06532 /* LaunchScreen.storyboard */; };
 		05C595882038146000E06532 /* HealthProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C595872038146000E06532 /* HealthProfileTests.swift */; };
 		05C595932038146000E06532 /* HealthProfileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C595922038146000E06532 /* HealthProfileUITests.swift */; };
-		05C595A12038395C00E06532 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C595A02038395C00E06532 /* User.swift */; };
-		05C595A620383A5400E06532 /* HealthRecords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C595A520383A5400E06532 /* HealthRecords.swift */; };
 		05C595A820383E9900E06532 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C595A720383E9900E06532 /* LoginViewController.swift */; };
 		05C595AC203841EA00E06532 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C595AB203841EA00E06532 /* SignUpViewController.swift */; };
 		05C595AE2038A23C00E06532 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05C595AD2038A23C00E06532 /* GoogleService-Info.plist */; };
@@ -23,10 +21,10 @@
 		05C595B42038B80700E06532 /* APIMedicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C595B32038B80700E06532 /* APIMedicController.swift */; };
 		05C595BC20390DE300E06532 /* SymptomsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C595BB20390DE300E06532 /* SymptomsListViewController.swift */; };
 		05C595BE20391AA800E06532 /* SymptomsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C595BD20391AA800E06532 /* SymptomsCell.swift */; };
-		05EAE68B203920E70089CABD /* test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05EAE689203920E70089CABD /* test.storyboard */; };
-		9DA5B3FE203922CE00777BF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA5B3FD203922CE00777BF7 /* Main.storyboard */; };
-		9DA5B4002039275300777BF7 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA5B3FF2039275300777BF7 /* Assets */; };
+		05E3361F2039400A00C76BCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05E3361D2039400A00C76BCD /* Main.storyboard */; };
+		05E33621203941AA00C76BCD /* DataObjects in Resources */ = {isa = PBXBuildFile; fileRef = 05E33620203941AA00C76BCD /* DataObjects */; };
 		05EAE68D203921EF0089CABD /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EAE68C203921EF0089CABD /* DataModel.swift */; };
+		9DA5B4002039275300777BF7 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA5B3FF2039275300777BF7 /* Assets */; };
 		EBB50AB26D4CE982A160AC19 /* Pods_HealthProfile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EF98E8F119E887A9D439C80 /* Pods_HealthProfile.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,8 +59,6 @@
 		05C5958E2038146000E06532 /* HealthProfileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthProfileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05C595922038146000E06532 /* HealthProfileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthProfileUITests.swift; sourceTree = "<group>"; };
 		05C595942038146000E06532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		05C595A02038395C00E06532 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		05C595A520383A5400E06532 /* HealthRecords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthRecords.swift; sourceTree = "<group>"; };
 		05C595A720383E9900E06532 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		05C595AB203841EA00E06532 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		05C595AD2038A23C00E06532 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -71,11 +67,11 @@
 		05C595B52038CE3700E06532 /* HealthProfile-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HealthProfile-Bridging-Header.h"; sourceTree = "<group>"; };
 		05C595BB20390DE300E06532 /* SymptomsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomsListViewController.swift; sourceTree = "<group>"; };
 		05C595BD20391AA800E06532 /* SymptomsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomsCell.swift; sourceTree = "<group>"; };
+		05E3361E2039400A00C76BCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		05E33620203941AA00C76BCD /* DataObjects */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DataObjects; path = ../../../../../Downloads/DataObjects; sourceTree = "<group>"; };
 		05EAE68C203921EF0089CABD /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
-		05EAE68F203923930089CABD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5EF98E8F119E887A9D439C80 /* Pods_HealthProfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthProfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		971162DB17ADD6B9B97CFF73 /* Pods-HealthProfile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthProfile.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthProfile/Pods-HealthProfile.release.xcconfig"; sourceTree = "<group>"; };
-		9DA5B3FD203922CE00777BF7 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9DA5B3FF2039275300777BF7 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
 		BB07B9B9E92AD77C4CF6BB89 /* Pods-HealthProfile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthProfile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealthProfile/Pods-HealthProfile.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -165,13 +161,13 @@
 		05C595A22038396200E06532 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9DA5B3FD203922CE00777BF7 /* Main.storyboard */,
-				05EAE689203920E70089CABD /* test.storyboard */,
+				05E3361D2039400A00C76BCD /* Main.storyboard */,
 				05C5957B2038146000E06532 /* LaunchScreen.storyboard */,
 				05C595712038146000E06532 /* MainViewController.swift */,
 				05C595A720383E9900E06532 /* LoginViewController.swift */,
 				05C595AB203841EA00E06532 /* SignUpViewController.swift */,
 				05C595BB20390DE300E06532 /* SymptomsListViewController.swift */,
+				05C595BD20391AA800E06532 /* SymptomsCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -179,11 +175,9 @@
 		05C595A32038396500E06532 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				05C595A02038395C00E06532 /* User.swift */,
-				05C595A520383A5400E06532 /* HealthRecords.swift */,
+				05E33620203941AA00C76BCD /* DataObjects */,
 				05C595B12038B7F800E06532 /* FirebaseController.swift */,
 				05C595B32038B80700E06532 /* APIMedicController.swift */,
-				05C595BD20391AA800E06532 /* SymptomsCell.swift */,
 				05EAE68C203921EF0089CABD /* DataModel.swift */,
 			);
 			path = Model;
@@ -327,10 +321,10 @@
 			files = (
 				05C5957D2038146000E06532 /* LaunchScreen.storyboard in Resources */,
 				9DA5B4002039275300777BF7 /* Assets in Resources */,
-				9DA5B3FE203922CE00777BF7 /* Main.storyboard in Resources */,
+				05E3361F2039400A00C76BCD /* Main.storyboard in Resources */,
 				05C595AE2038A23C00E06532 /* GoogleService-Info.plist in Resources */,
 				05C5957A2038146000E06532 /* Assets.xcassets in Resources */,
-				05EAE690203923940089CABD /* Main.storyboard in Resources */,
+				05E33621203941AA00C76BCD /* DataObjects in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,12 +417,10 @@
 				05C595B22038B7F800E06532 /* FirebaseController.swift in Sources */,
 				05C595A820383E9900E06532 /* LoginViewController.swift in Sources */,
 				05C595AC203841EA00E06532 /* SignUpViewController.swift in Sources */,
-				05C595A12038395C00E06532 /* User.swift in Sources */,
 				05EAE68D203921EF0089CABD /* DataModel.swift in Sources */,
 				05C595BE20391AA800E06532 /* SymptomsCell.swift in Sources */,
 				05C595722038146000E06532 /* MainViewController.swift in Sources */,
 				05C595B42038B80700E06532 /* APIMedicController.swift in Sources */,
-				05C595A620383A5400E06532 /* HealthRecords.swift in Sources */,
 				05C595702038146000E06532 /* AppDelegate.swift in Sources */,
 				05C595782038146000E06532 /* HealthProfile.xcdatamodeld in Sources */,
 			);
@@ -474,10 +466,10 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		05EAE68E203923930089CABD /* Main.storyboard */ = {
+		05E3361D2039400A00C76BCD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				05EAE68F203923930089CABD /* Base */,
+				05E3361E2039400A00C76BCD /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
