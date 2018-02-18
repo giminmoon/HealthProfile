@@ -11,6 +11,7 @@ import UIKit
 class SymptomsCell: UITableViewCell {
 
     
+    @IBOutlet weak var radioButton: UIButton!
     @IBOutlet weak var nameField: UILabel!
     
 }
