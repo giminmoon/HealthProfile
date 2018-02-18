@@ -8,10 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class MainViewController: UIViewController {
+    
+    let MedicController = APIMedicController()
+        
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("in main")
+        MedicController.getSymptoms()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
