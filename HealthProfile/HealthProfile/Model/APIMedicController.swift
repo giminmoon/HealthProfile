@@ -24,7 +24,7 @@ class APIMedicController{
 
     let sessionManager = SessionManager()
     
-    func getSymptoms() -> [String] {
+    func getSymptoms(completion: @escaping ([String]?) -> Void){
         var listOfSymptoms : [String] = []
         let parameters: Parameters = [
             "token": token,
@@ -37,9 +37,12 @@ class APIMedicController{
                 //print("Data: \(utf8Text)")
                 
             let json = try? JSON(data: data)
+        
             let errorObj: JSON = json!["error"]
-            //Check for errors
+//            Check for errors
+
             if (errorObj.dictionaryValue != [:]) {
+                completion(nil)
                 return
             }
             else {
@@ -50,9 +53,9 @@ class APIMedicController{
                     print(symptomps["Name"].stringValue)
                     }
                 }
+                completion(listOfSymptoms)
             }
         }
-        return listOfSymptoms
     }
 }
 

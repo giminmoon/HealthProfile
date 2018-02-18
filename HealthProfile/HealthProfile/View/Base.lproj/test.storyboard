@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MIb-Q2-eTg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aC6-z5-dwp">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -109,6 +110,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i1j-76-kbK">
+                                <rect key="frame" x="236" y="380" width="46" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="MIb-Q2-eTg" kind="show" id="AAZ-Ob-cAS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="xU2-93-VWX"/>
@@ -117,12 +126,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kzX-G4-u9e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1353" y="30"/>
+            <point key="canvasLocation" x="1352.8" y="29.55665024630542"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--addSymptom-->
         <scene sceneID="CdI-51-TIE">
             <objects>
-                <navigationController id="MIb-Q2-eTg" sceneMemberID="viewController">
+                <navigationController title="addSymptom" id="MIb-Q2-eTg" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OZc-a5-6iu">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -143,15 +152,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="bfv-Np-PzA">
-                                <rect key="frame" x="0.0" y="88" width="375" height="56"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="OGw-dE-SHN" id="mcc-vQ-clG"/>
-                                </connections>
-                            </searchBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jYL-Ne-57e">
-                                <rect key="frame" x="0.0" y="144" width="375" height="634"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" allowsMultipleSelection="YES" allowsMultipleSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jYL-Ne-57e">
+                                <rect key="frame" x="0.0" y="89" width="375" height="689"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="60" id="Etz-eR-kBX" customClass="SymptomsCell" customModule="HealthProfile" customModuleProvider="target">
@@ -161,17 +163,28 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="59.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="208-PA-gS2">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="208-PA-gS2">
                                                     <rect key="frame" x="46" y="11" width="289" height="38"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDO-x2-8we">
+                                                    <rect key="frame" x="314" y="14" width="46" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                </button>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="208-PA-gS2" secondAttribute="trailing" constant="24" id="If7-x6-Nzg"/>
+                                                <constraint firstItem="208-PA-gS2" firstAttribute="top" secondItem="uqB-d2-v51" secondAttribute="topMargin" constant="-44" id="IoE-n7-C7i"/>
+                                                <constraint firstItem="208-PA-gS2" firstAttribute="centerY" secondItem="uqB-d2-v51" secondAttribute="centerY" id="KQP-J6-rwk"/>
+                                                <constraint firstItem="208-PA-gS2" firstAttribute="leading" secondItem="uqB-d2-v51" secondAttribute="leadingMargin" constant="30" id="Msv-Jt-Mw0"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="nameField" destination="208-PA-gS2" id="L2v-WS-Uck"/>
+                                            <outlet property="radioButton" destination="gDO-x2-8we" id="1Fe-63-lW2"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -179,13 +192,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="bfv-Np-PzA" firstAttribute="trailing" secondItem="jYL-Ne-57e" secondAttribute="trailing" id="92Q-s8-NpG"/>
                             <constraint firstItem="jYL-Ne-57e" firstAttribute="leading" secondItem="VbZ-tW-M4k" secondAttribute="leading" id="9gD-JI-cOT"/>
+                            <constraint firstItem="jYL-Ne-57e" firstAttribute="top" secondItem="VbZ-tW-M4k" secondAttribute="top" constant="1" id="N3y-s6-Y4k"/>
                             <constraint firstItem="VbZ-tW-M4k" firstAttribute="trailing" secondItem="jYL-Ne-57e" secondAttribute="trailing" id="Nqp-Gu-MIX"/>
-                            <constraint firstItem="jYL-Ne-57e" firstAttribute="top" secondItem="bfv-Np-PzA" secondAttribute="bottom" id="RA8-sA-rB9"/>
                             <constraint firstItem="VbZ-tW-M4k" firstAttribute="bottom" secondItem="jYL-Ne-57e" secondAttribute="bottom" id="SfG-do-7nI"/>
-                            <constraint firstItem="bfv-Np-PzA" firstAttribute="leading" secondItem="jYL-Ne-57e" secondAttribute="leading" id="kQ4-Zc-2hs"/>
-                            <constraint firstItem="bfv-Np-PzA" firstAttribute="top" secondItem="VbZ-tW-M4k" secondAttribute="top" id="oPb-jk-Tqe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VbZ-tW-M4k"/>
                     </view>
@@ -199,7 +209,6 @@
                 <searchDisplayController id="DH1-xx-1ls">
                     <connections>
                         <outlet property="delegate" destination="OGw-dE-SHN" id="DAT-dr-DRy"/>
-                        <outlet property="searchBar" destination="bfv-Np-PzA" id="i0E-R2-TlM"/>
                         <outlet property="searchContentsController" destination="OGw-dE-SHN" id="SRc-8T-KoH"/>
                         <outlet property="searchResultsDataSource" destination="OGw-dE-SHN" id="6Av-wa-UJV"/>
                         <outlet property="searchResultsDelegate" destination="OGw-dE-SHN" id="ohA-gk-0b4"/>
