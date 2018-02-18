@@ -7,3 +7,14 @@
 //
 
 import Foundation
+import Firebase
+
+class FirebaseController {
+    var currentUser : User?
+    
+    func getCurrentUser(){
+        currentUser = Auth.auth().currentUser
+        return currentUser
+    }
+    
+}
