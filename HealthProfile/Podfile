@@ -11,5 +11,6 @@ target 'HealthProfile' do
   pod 'Firebase/Database'
   pod 'Firebase/Auth'
   pod 'Firebase/Storage'
-
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
 end
